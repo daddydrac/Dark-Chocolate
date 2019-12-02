@@ -6,8 +6,8 @@ Transfer COCO data set annotations to Darknet YOLO annotations format. Hence, Da
 1. Open the command line
 2. Type in:  ```python dark_chocolate.py --input-path ../my/file/path/here```
 
-### Validation
-When you run the command line util, it will output the JSON for each so you can validate class IDs, the math for any changes/updates in Darknet or COCO, etc.
+### Validation - Explain your AI from the pipeline forward
+When you run the command line util, it will output the JSON for each so you can validate class IDs, as well the math for any changes/updates in Darknet or COCO, etc.
 
 ```
 [  
