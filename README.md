@@ -25,7 +25,7 @@ When you run the command line util, it will output the JSON for each so you can 
       
       'bbox_width':89,
       'bbox_height':77,
-      # bounding box coords where x is 89px from right and y is 77px down the image
+      # bounding box coords where, in this case, x is 89px from right and y is 77px down the image
       
       'img_width':640,
       'img_height':512,
