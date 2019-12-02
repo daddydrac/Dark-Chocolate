@@ -52,4 +52,7 @@ This represents the output, in the order that you will see in *.txt files from t
 (class id) (x / img_width) (y / img_height) (bbox_width / img_width) (bbox_height / img_height)
 ```
 
+#### Support
+Yolov3, Current version of COCO and Linux are only supported at this time
+
 
