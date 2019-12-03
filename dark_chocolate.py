@@ -7,7 +7,7 @@ def coco_mixer(acc, curr):
       return _.flat_map(acc, lambda xo: {
         "id": curr['id'],
         "image_id": xo['image_id'],
-        "coco_class": xo['category_id'],
+        "coco_class": xo['category_id'] - 1,
         "x": xo['bbox'][0],
         "y": xo['bbox'][1],
         "bbox_width": xo['bbox'][2],
