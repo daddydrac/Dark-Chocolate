@@ -15,7 +15,7 @@ def coco_mixer(acc, curr):
         "img_width": curr['width'],
         "img_height": curr['height'],
         "output": curr['file_name']+".txt",
-        "darkchocolate": [int(xo['category_id']) - 1, xo['bbox'][0] / curr['width'], xo['bbox'][1] / curr['height'], xo['bbox'][2] / curr['width'], xo['bbox'][3] / curr['height']
+        "darkchocolate": [int(xo['category_id']) - 1, (xo['bbox'][0] + xo['bbox'][2] / 2) / curr['width'], (xo['bbox'][1] + xo['bbox'][3] / 2) / curr['height'], xo['bbox'][2] / curr['width'], xo['bbox'][3] / curr['height']
         ]
       }
    )
@@ -53,3 +53,4 @@ if __name__ == '__main__':
     opt = parser.parse_args()
 
     dark_chocolate(opt.input_path)
+
