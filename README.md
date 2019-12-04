@@ -46,13 +46,13 @@ When you run the command line util, it will output the JSON for each so you can 
 ]
 ```
 
-### The Math for Darknet Annotation Conversion from COCO Annotations
+### The Math for Darknet Annotation Conversion from COCO 
 This represents the output, in the order that you will see in *.txt files from the JSON object generated above:
 ```
 (class id) ((x + bbox_width / 2)  / img_width), ((y + bbox_height / 2) / img_height), (bbox_width / img_width), (bbox_height / img_height)
 ```
 
 #### Support
-Yolov3, Current version of COCO and Linux are only supported at this time
+Yolov3/Darknet; Current version of COCO and Linux are only supported at this time.
 
 
