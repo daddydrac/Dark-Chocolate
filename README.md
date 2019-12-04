@@ -17,7 +17,7 @@ When you run the command line util, it will output the JSON for each so you can 
       # make sure the two image IDs match
       
       'coco_class':'3',
-      # make sure the class ID matches the index position in *.names file for COCO that Darknet looks at for obj detection
+      # make sure the class ID matches the index position in *.names file for COCO that Darknet looks at for obj detection (Keep in mind Darknet is 0 indexed)
       
       'x':529,
       'y':218,
@@ -25,7 +25,7 @@ When you run the command line util, it will output the JSON for each so you can 
       
       'bbox_width':89,
       'bbox_height':77,
-      # bounding box coords where, in this case, x is 89px from right and y is 77px down the image
+      # bounding box coords where, in this case, x is 89px from left and y is 77px down the image
       
       'img_width':640,
       'img_height':512,
@@ -46,7 +46,7 @@ When you run the command line util, it will output the JSON for each so you can 
 ]
 ```
 
-### The Math for Darknet Annotation Conversion
+### The Math for Darknet Annotation Conversion from COCO Annotations
 This represents the output, in the order that you will see in *.txt files from the JSON object generated above:
 ```
 (class id) ((x + bbox_width / 2)  / img_width), ((y + bbox_height / 2) / img_height), (bbox_width / img_width), (bbox_height / img_height)
