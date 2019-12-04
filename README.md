@@ -49,7 +49,7 @@ When you run the command line util, it will output the JSON for each so you can 
 ### The Math for Darknet Annotation Conversion
 This represents the output, in the order that you will see in *.txt files from the JSON object generated above:
 ```
-(class id) (x / img_width) (y / img_height) (bbox_width / img_width) (bbox_height / img_height)
+(class id) ((x + bbox_width / 2)  / img_width), ((y + bbox_height / 2) / img_height), (bbox_width / img_width), (bbox_height / img_height)
 ```
 
 #### Support
